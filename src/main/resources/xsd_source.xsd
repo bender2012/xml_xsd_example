@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+
+	<xs:element name="person">
+		<xs:complexType>		
+			<xs:sequence>
+				<xs:element name="name">
+					<xs:complexType>
+						<xs:attributeGroup ref="at_gr"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="surname" type="xs:string" />
+			</xs:sequence>
+			<xs:attribute name="atr" type="xs:string"></xs:attribute>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:attributeGroup name="at_gr">		
+		<xs:attribute name="aaa" type="xs:string"></xs:attribute>
+		<xs:attribute name="bbb" type="xs:string"></xs:attribute>
+	</xs:attributeGroup>
+
+
+</xs:schema>
